@@ -1,0 +1,90 @@
+ul,li {
+    list-style: none;
+}
+
+body {
+    background-image: url('');
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.post__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 85vh;
+}
+
+.post__detail {
+    max-width: 100%;
+    background: radial-gradient(#1fe4f5, #3fbafe);
+    padding: 50px;
+    text-align: left;
+    border-radius: 10px;
+    color: #fff;
+    width: 70%;
+}
+
+.post__title {
+    font-size: 45px;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: white;
+}
+
+.post__body {
+    font-size: 25px;
+    color: white;
+    line-height: 1;
+}
+
+.post__title svg path,
+.post__body svg path {
+    color: white;
+}
+
+
+.post__title svg,
+.post__body svg {
+    margin-right: 12px;
+}
+
+
+.post__comments {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+    height: 100%;
+    width: 30%;
+    text-align: left;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 60px 30px;
+}
+
+.post__comments_title {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.comments__wrapper {
+    background: rgba(255,255,255, 0.5);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.comments__wrapper h6 {
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.comments__wrapper p {
+    font-size: 14px;
+    color: grey;
+    line-height: 1;
+}
