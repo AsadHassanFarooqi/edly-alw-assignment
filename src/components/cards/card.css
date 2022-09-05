@@ -41,16 +41,16 @@
 }
 
 .line__clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card__title {
-    color: white;
-    -webkit-line-clamp: 1;
-    text-align: left;
-    margin: 10px 0;
+  color: white;
+  -webkit-line-clamp: 1;
+  text-align: left;
+  margin: 10px 0;
 }
 
 .card__icon {
@@ -59,7 +59,7 @@
 
 .card__body {
   font-weight: 400;
-  color: white;  
+  color: white;
   -webkit-line-clamp: 2;
   text-align: left;
   margin-bottom: 20px;
@@ -71,7 +71,7 @@
 }
 
 .card__link svg {
-    margin-left: 3px; 
+  margin-left: 3px;
 }
 
 .card-1 {

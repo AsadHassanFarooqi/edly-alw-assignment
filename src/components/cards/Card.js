@@ -12,7 +12,7 @@ import {
 import "./card.css";
 
 const Card = ({ card, cardIndex }) => {
-  const rndInt = cardIndex > 4 ? (Math.round(cardIndex / 5) + 1) : (cardIndex + 1);
+  const rndInt = cardIndex > 4 ? Math.round(cardIndex / 5) + 1 : cardIndex + 1;
   return (
     <div className={`card card-${rndInt}`}>
       <div className="card__icon">

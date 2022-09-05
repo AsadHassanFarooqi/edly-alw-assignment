@@ -1,13 +1,12 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import "./postdetail.css";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import './postdetail.css';
 
-import useFetch from "../../hooks/useFetch";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBlog, faList } from '@fortawesome/free-solid-svg-icons';
+import useFetch from '../../hooks/useFetch';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBlog, faList } from "@fortawesome/free-solid-svg-icons";
-
-const PostDetail = () => {
+function PostDetail() {
   const { id } = useParams();
   const {
     data: post,
@@ -19,7 +18,6 @@ const PostDetail = () => {
     isPending: commentsPending,
     error: commentsError,
   } = useFetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
-  console.log(comments);
   return (
     <div className="post__wrapper">
       {(postError || commentsError) && (
@@ -42,7 +40,11 @@ const PostDetail = () => {
         )}
       </div>
       <div className="post__comments">
-        <h2 className="post__comments_title">Comments({comments.length})</h2>
+        <h2 className="post__comments_title">
+          Comments(
+          {comments.length}
+          )
+        </h2>
         {!commentsPending ? (
           <ul>
             {comments?.map((comment) => (
@@ -53,11 +55,11 @@ const PostDetail = () => {
             ))}
           </ul>
         ) : (
-          <h1 class="loading">Loading comments...</h1>
+          <h1 className="loading">Loading comments...</h1>
         )}
       </div>
     </div>
   );
-};
+}
 
 export default PostDetail;
